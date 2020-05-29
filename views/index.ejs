@@ -2,12 +2,7 @@
 <html lang="en">
   <%- include('layouts/header'); -%>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/">App Chat</a>
-      </nav>
-    </div>
-
+    <%- include('layouts/navbar'); -%>
     <div class="container">
       <h1 class="tieude">Đăng Ký Tài Khoản</h1>
       <form action="/create/user" method="POST">
@@ -62,11 +57,7 @@
       </form>
     </div>
     <hr />
+    <%- include('layouts/footer'); -%>
     <%- include('layouts/scripts'); -%>
-    <footer>
-      <div class="footer">
-        <p>Bản quyền trang web thuộc về Đỗ Châu &copy</p>
-      </div>
-    </footer>
   </body>
 </html>
