@@ -1,0 +1,39 @@
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  height: 300px;
+  background-color: #dcdee0;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #316596;
+}
+
+.container-fluid {
+  background-color: #dcdee0;
+}
+
+h1.tieude {
+  text-align: center;
+  color: red;
+}
+
+/* Định dạng footer */
+.footer {
+  background-color: #dcdee0;
+  color: #316596;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
