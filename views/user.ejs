@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/user">App Chat</a>
+      </div>
+    </nav>
+    <section class="page-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a
+                class="list-group-item list-group-item-action active"
+                id="list-home-list"
+                data-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="home"
+                >Thông Tin Cá Nhân
+              </a>
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-profile-list"
+                data-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="profile"
+                >Liên Hệ
+              </a>
+
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-settings-list"
+                data-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="settings"
+                >Cài Đặt
+              </a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="list-home"
+                role="tabpanel"
+                aria-labelledby="list-home-list"
+              >
+                <p class="lead">
+                  Freelancer is a free bootstrap theme created by Start
+                  Bootstrap. The download includes the complete source files
+                  including HTML, CSS, and JavaScript as well as optional SASS
+                  stylesheets for easy customization.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-profile"
+                role="tabpanel"
+                aria-labelledby="list-profile-list"
+              >
+                <p class="lead">
+                  You can create your own custom avatar for the masthead, change
+                  the icon in the dividers, and add your email address to the
+                  contact form to make it fully functional!
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-messages"
+                role="tabpanel"
+                aria-labelledby="list-messages-list"
+              >
+                <p class="lead">
+                  You can create your own custom avatar for the masthead, change
+                  the icon in the dividers, and add your email address to the
+                  contact form to make it fully functional!
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-settings"
+                role="tabpanel"
+                aria-labelledby="list-settings-list"
+              >
+                <p class="lead">
+                  You can create your own custom avatar for the masthead, change
+                  the icon in the dividers, and add your email address to the
+                  contact form to make it fully functional!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <%- include('layouts/footer'); -%> <%- include('layouts/scripts'); -%>
+  </body>
+</html>
