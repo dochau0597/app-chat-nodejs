@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const User = require("./models/data");
+const UserLogin = require("./models/user");
 
 const app = new express();
 const port = process.env.PORT || 3000;
@@ -26,12 +27,17 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/home", (req, res) => {
-  res.render("home");
+app.get("/user", (req, res) => {
+  res.render("user");
 });
+
 app.post("/create/user", (req, res) => {
   User.create(req.body, (err, user) => {
     res.redirect("/home");
     console.log("da them vao data");
   });
+});
+
+app.get("/login/user", (req, res) => {
+  res.render("login");
 });
